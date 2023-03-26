@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <div class="row mb-3">
+    <div class="col">Welcome To Mail Sender Application</div>
+    <br />
+    <br />
+  </div>
+  <div class="row mt-2">
+    <div class="col-5">
+      <h2>Message</h2>
+      <form (ngSubmit)="onSubmit()" [formGroup]="MessageForm">
+        <div class="mb-3">
+          <label for="ProductName">Subject</label>
+          <input
+            id="subject"
+            type="text"
+            class="form-control mt-2"
+            formControlName="subject"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="Message">Message</label>
+          <textarea
+            id="message"
+            type="text"
+            class="form-control mt-2"
+            formControlName="message"
+            cols="30"
+            rows="10"
+          >
+          </textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-6">
+      <h2>Mailes</h2>
+      <table class="table table-bordered table-striped table-hover">
+        <tbody *ngFor="let message of messages">
+          <tr>
+            <td>{{ message.subject }}</td>
+            <td id="btn">
+              <a
+                [routerLink]="['/messageSender', message.messageId]"
+                class="btn btn-success"
+                >Send to Mails</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

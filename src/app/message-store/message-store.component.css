@@ -1,0 +1,58 @@
+.container-fluid {
+  padding: 5%;
+}
+form {
+  border: 2px solid rgb(219, 222, 236);
+  border-radius: 4px;
+  padding: 25px;
+}
+.table-bordered {
+  border: 2px solid rgb(219, 222, 236);
+  border-radius: 4px;
+  padding: 25px;
+}
+label {
+  font-size: 20px;
+  font-weight: 300;
+}
+h1 {
+  margin-top: 20%;
+  font-weight: 700;
+}
+
+th,
+td {
+  font-size: 20px;
+  text-align: center;
+}
+#btn {
+  width: 30%;
+  text-align: right;
+}
+.col {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+}
+form button {
+  margin-left: 87%;
+}
+
+.btn-success,
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #e68cf8;
+  --bs-btn-border-color: #e68cf8;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #f552f5;
+  --bs-btn-hover-border-color: #ec62e1;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #e68bee;
+  --bs-btn-active-border-color: #e96ed4;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #e68cf8;
+  --bs-btn-disabled-border-color: #e68cf8;
+}
